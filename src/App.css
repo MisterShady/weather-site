@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -17,6 +17,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 300px;
+  margin: auto;
 }
 
 h1 {
@@ -49,6 +50,7 @@ button:hover {
   background: rgba(0, 123, 255, 0.1);
   padding: 15px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .weather-info h2 {
@@ -59,7 +61,42 @@ button:hover {
   margin: 5px 0;
 }
 
+.weather-info img {
+  width: 50px;
+  height: 50px;
+}
+
 .error {
   color: red;
-  margin-bottom: 20px;
+}
+
+.forecast {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.forecast-day {
+  background: rgba(0, 123, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-days {
+  display: flex;
+  justify-content: space-around;
 }
